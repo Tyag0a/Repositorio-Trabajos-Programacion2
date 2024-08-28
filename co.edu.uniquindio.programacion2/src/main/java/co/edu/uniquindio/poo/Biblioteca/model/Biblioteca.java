@@ -11,7 +11,7 @@ public class Biblioteca {
     private List<Miembro> miembros;
     private Bibliotecario bibliotecario;
 
-    public BibliotecaMenu() {
+    public Biblioteca() {
         libros = new ArrayList<>();
         miembros = new ArrayList<>();
         bibliotecario = new Bibliotecario("Laura García", "E001");
@@ -19,7 +19,6 @@ public class Biblioteca {
 
     /**
      * Metodo mostrar el menu de la interfaz.
-
      */
 
     public void mostrarMenu() {
@@ -47,6 +46,10 @@ public class Biblioteca {
             if (opcion == null || opcion.equals("Salir")) {
                 break;
             }
+
+            /**
+             * Switch case para la estructura del menu.
+             */
 
             switch (opcion) {
                 case "Registrar libro":
